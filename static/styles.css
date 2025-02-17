@@ -1,0 +1,117 @@
+/* static/styles.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.chat-container {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    height: 70vh;
+    overflow-y: auto;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.message {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.user-message {
+    background-color: #e3f2fd;
+    margin-left: 20%;
+}
+
+.assistant-message {
+    background-color: #f5f5f5;
+    margin-right: 20%;
+}
+
+.input-container {
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    width: 50px; /* Adjust size as needed */
+    height: 50px;
+    padding: 0;
+    background-color: #fcfcfc;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button:hover {
+    background-color: #1976d2;
+    transform: scale(1.1);
+}
+
+button img {
+    width: 30px;  /* Adjust image size relative to button */
+    height: 30px;
+    object-fit: contain;
+}
+
+
+/* Markdown styles */
+.message h1 {
+    font-size: 1.5em;
+    margin: 1em 0;
+    text-align: left;
+}
+
+.message h2 {
+    font-size: 1.3em;
+    margin: 0.8em 0;
+}
+
+.message h3 {
+    font-size: 1.1em;
+    margin: 0.6em 0;
+}
+
+.message p {
+    margin: 0.5em 0;
+}
+
+.message em {
+    font-style: italic;
+}
+
+.message strong {
+    font-weight: bold;
+}
